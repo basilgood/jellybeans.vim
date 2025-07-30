@@ -653,6 +653,13 @@ call s:X("IndentGuidesEven","","1b1b1b","","","")
 hi! link TagListFileName Directory
 call s:X("PreciseJumpTarget","B9ED67","405026","","White","Green")
 
+hi clear ALEError
+hi clear ALEWarning
+hi clear ALEInfo
+call s:X('ALEErrorSign',"cf4c70","","","")
+call s:X('ALEWarningSign',"cfac4c","","","")
+call s:X('ALEInfoSign',"4cb1cf","","","")
+
 " Manual overrides for 256-color terminals. Dark colors auto-map badly.
 if !s:low_color
   hi StatusLineNC ctermbg=235
