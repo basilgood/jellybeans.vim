@@ -470,7 +470,7 @@ call s:X("WildMenu","f0a0c0","302028","","Magenta","")
 
 call s:X("Folded","a0a8b0","384048","italic",s:termBlack,"")
 call s:X("FoldColumn","535D66","1f1f1f","","",s:termBlack)
-call s:X("SignColumn","777777","333333","","",s:termBlack)
+call s:X("SignColumn","","101010","","",s:termBlack)
 call s:X("ColorColumn","","000000","","",s:termBlack)
 
 call s:X("Title","70b950","","bold","Green","")
@@ -656,9 +656,9 @@ call s:X("PreciseJumpTarget","B9ED67","405026","","White","Green")
 hi clear ALEError
 hi clear ALEWarning
 hi clear ALEInfo
-call s:X("ALEErrorSign","cf4c70","","","","")
-call s:X("ALEWarningSign","cfac4c","","","","")
-call s:X("ALEInfoSign","4cb1cf","","","","")
+call s:X("ALEErrorSign","cf4c70","101010","","","")
+call s:X("ALEWarningSign","cfac4c","101010","","","")
+call s:X("ALEInfoSign","4cb1cf","101010","","","")
 
 " Manual overrides for 256-color terminals. Dark colors auto-map badly.
 if !s:low_color
